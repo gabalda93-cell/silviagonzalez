@@ -1,0 +1,30 @@
+{
+  "name": "ALÈ · Sílvia · Mesociclo 1",
+  "short_name": "ALÈ Sílvia",
+  "description": "4 semanas para construir reserva de fuerza y músculo, preservar potencia y capacidad funcional y compatibilizarlo con el voleibol y el pádel.",
+  "lang": "es",
+  "start_url": "./?v=2.7.mt7i4y83",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#F5F0E6",
+  "theme_color": "#F5F0E6",
+  "icons": [
+    {
+      "src": "icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    },
+    {
+      "src": "icon-512-maskable.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    }
+  ]
+}

@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>ALÈ · Sílvia · Mesociclo 1</title>
+<meta name="description" content="4 semanas para construir reserva de fuerza y músculo, preservar potencia y capacidad funcional y compatibilizarlo con el voleibol y el pádel.">
+<meta name="theme-color" content="#F5F0E6">
+<link rel="manifest" href="manifest.webmanifest?v=2.7.mt7i4y83">
+<link rel="apple-touch-icon" href="icon-180.png">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="default">
+<meta name="apple-mobile-web-app-title" content="ALÈ Sílvia">
+<meta name="robots" content="noindex,nofollow">
+<link rel="stylesheet" href="ale-brand.css?v=2.7.mt7i4y83">
+<style>
+  html,body{margin:0;background:#F5F0E6}
+  #root{min-height:100vh}
+</style>
+</head>
+<body>
+<div id="root"></div>
+<script src="client.js?v=2.7.mt7i4y83"></script>
+<script src="idioma.js?v=2.7.mt7i4y83"></script>
+<script src="app.js?v=2.7.mt7i4y83"></script>
+<script src="coach.js?v=2.7.mt7i4y83"></script>
+<script>
+if ("serviceWorker" in navigator) {
+  window.addEventListener("load", function () {
+    navigator.serviceWorker.register("sw.js?v=2.7.mt7i4y83").then(function (r) {
+      // Si hi ha una versió nova esperant, s'aplica i es recarrega una sola vega.
+      r.addEventListener("updatefound", function () {
+        var w = r.installing;
+        if (!w) return;
+        w.addEventListener("statechange", function () {
+          if (w.state === "installed" && navigator.serviceWorker.controller) w.postMessage("activa");
+        });
+      });
+      r.update();
+    }).catch(function(){});
+    var recarregat = false;
+    navigator.serviceWorker.addEventListener("controllerchange", function () {
+      if (recarregat) return; recarregat = true; window.location.reload();
+    });
+  });
+}
+</script>
+</body>
+</html>
