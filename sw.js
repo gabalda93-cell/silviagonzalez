@@ -1,8 +1,8 @@
-/* ALÈ · silvia · build 2.7.mt7i4y83 · generat per build/publica.js */
-var CACHE = "ale-silvia-2.7.mt7i4y83";
-var FILES = ["./", "./index.html", "./app.js?v=2.7.mt7i4y83", "./client.js?v=2.7.mt7i4y83",
-  "./idioma.js?v=2.7.mt7i4y83", "./coach.js?v=2.7.mt7i4y83", "./ale-brand.css?v=2.7.mt7i4y83",
-  "./manifest.webmanifest?v=2.7.mt7i4y83", "./icon-180.png", "./icon-192.png", "./icon-512.png"];
+/* ALÈ · silvia · build 2.7.font1 */
+var CACHE = "ale-silvia-2.7.font1";
+var FILES = ["./", "./index.html", "./app.js?v=2.7.font1", "./client.js?v=2.7.font1",
+  "./idioma.js?v=2.7.font1", "./coach.js?v=2.7.font1", "./ale-brand.css?v=2.7.font1",
+  "./manifest.webmanifest?v=2.7.font1", "./icon-180.png", "./icon-192.png", "./icon-512.png"];
 
 self.addEventListener("install", function (e) {
   e.waitUntil(caches.open(CACHE).then(function (c) { return c.addAll(FILES); }));
